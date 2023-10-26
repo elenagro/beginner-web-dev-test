@@ -1,10 +1,11 @@
+$navColor: #fff;
+
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100px;
-  background-color: #00b894;
 }
 
 .left-side {
@@ -32,4 +33,5 @@
   text-decoration: none;
   letter-spacing: -0.77px;
   text-align: left;
+  color: $navColor;
 }
