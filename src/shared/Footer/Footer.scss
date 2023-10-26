@@ -1,0 +1,14 @@
+$fontColor: #fff;
+
+.footer {
+  height: 100px;
+  color: $fontColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.copyright {
+  letter-spacing: -0.77px;
+}
