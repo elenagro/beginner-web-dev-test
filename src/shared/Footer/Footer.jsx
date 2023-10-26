@@ -1,7 +1,10 @@
 import React from "react";
 
+import "./Footer.scss";
+
 const Footer = () => {
-  return <p>Copyrigth 2023 by Elena</p>;
+  let year = new Date().getFullYear();
+  return <p>Copyrigth Elena © {year}</p>;
 };
 
 export default Footer;
