@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import dummyQuotes from "./dummy_quotes.json";
-
+import Wrapper from "../../shared/Wrapper/Wrapper";
 import "./Home.scss";
 
 const Home = () => {
@@ -23,14 +23,24 @@ const Home = () => {
   };
 
   return (
-    <React.Fragment>
+    <Wrapper>
       <div>
         <form className="form" onSubmit={shareQuote}>
-          <label>Share your favourite quote for today!</label>
-          <textarea rows="5" cols="80" value={newQuote} onChange={handleChange}>
+          <label className="share-title">
+            Share your favourite quote today!
+          </label>
+          <textarea
+            rows="5"
+            cols="80"
+            value={newQuote}
+            className="text-box"
+            onChange={handleChange}
+          >
             Enter your quote here...
           </textarea>
-          <button type="submit">Share</button>
+          <button type="submit" className="share-btn">
+            Share
+          </button>
         </form>
       </div>
       <div className="grid-quotes">
@@ -40,7 +50,7 @@ const Home = () => {
           </div>
         ))}
       </div>
-    </React.Fragment>
+    </Wrapper>
   );
 };
 

@@ -3,9 +3,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+}
+
+.share-title {
+  font-size: 50px;
+}
+.text-box {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.share-btn {
+  width: 100px;
+  height: 30px;
+  background: #00b894;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 20px;
 }
 
 .grid-quotes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 40px;
 }

@@ -1,3 +1,17 @@
 .theme-btn {
   cursor: pointer;
+  width: 130px;
+  height: 50px;
+  background: #485460;
+  border-radius: 20px;
+  opacity: 1;
+  text-align: center;
+  // font: normal normal bold 16px/19px Lato;
+  letter-spacing: -0.88px;
+  color: #ffffff;
+  border: none;
+}
+
+.theme-btn:hover {
+  background: #596275;
 }

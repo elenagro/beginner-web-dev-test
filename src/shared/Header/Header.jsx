@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/healthy-eating.png";
 import ThemeButton from "../../components/Button/ThemeButton";
 import Container from "../Container/Container";
+import { useTheme } from "../../store/theme-context";
 
 import "./Header.scss";
 
 const Header = () => {
+  const { darkTheme } = useTheme();
+
   return (
     <Container>
       <div id="header">
