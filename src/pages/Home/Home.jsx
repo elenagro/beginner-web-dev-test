@@ -39,7 +39,7 @@ const Home = () => {
             Enter your quote here...
           </textarea>
           <button type="submit" className="share-btn">
-            Share
+            SHARE
           </button>
         </form>
       </div>
