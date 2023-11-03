@@ -12,32 +12,45 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <Wrapper>
-      <h1>Feel Free To Contact Us</h1>
       <div className="contact">
-        <div className="contact-box">
-          <img
-            src={phoneContact}
-            alt="Phone Contact"
-            className="contact-icon"
-          />
-          <div>
-            <span>Monday to Friday, 9am to 10pm</span>
-            <span>+389 22 556 338</span>
+        <h1>Feel Free To Contact Us</h1>
+        <div className="contact-form">
+          <div className="contact-box">
+            <img
+              src={phoneContact}
+              alt="Phone Contact"
+              className="contact-icon"
+            />
+            <div className="phone-info">
+              <p>Monday to Friday, 9am to 10pm</p>
+              <span>+389 22 556 338</span>
+            </div>
           </div>
-        </div>
-        <div className="contact-box">
-          <img src={socialMedia} alt="Social Media" className="contact-icon" />
-          <div className="social-mediums">
-            <img src={facebook} alt="Facebook" className="s-media" />
-            <span>Follow Us on Facebook</span>
-            <img src={twitter} alt="Twitter" className="s-media" />
-            <span>Follow Us on Twitter</span>
-            <img src={instagram} alt="Instagram" className="s-media" />
-            <span>Follow Us on Instagram</span>
+          <div className="contact-box">
+            <img
+              src={socialMedia}
+              alt="Social Media"
+              className="contact-icon"
+            />
+            <div className="social-mediums">
+              <div className="s-media">
+                <img src={facebook} alt="Facebook" />
+                <p>Follow Us on Facebook</p>
+              </div>
+              <div className="s-media">
+                <img src={twitter} alt="Twitter" />
+                <p>Follow Us on Twitter</p>
+              </div>
+              <div className="s-media">
+                <img src={instagram} alt="Instagram" />
+                <p>Follow Us on Instagram</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="contact-box">
-          <img src={eMail} alt="E-mail" className="contact-icon" />
+          <div className="contact-box">
+            <img src={eMail} alt="E-mail" className="contact-icon" />
+            <span>info@motivationalquotes.com</span>
+          </div>
         </div>
       </div>
     </Wrapper>
