@@ -13,8 +13,9 @@ const Contact = () => {
   return (
     <Wrapper>
       <div className="contact">
-        <h1>Feel Free To Contact Us</h1>
+        <h1>FEEL FREE TO CONTACT US</h1>
         <div className="contact-form">
+          {/* Phone contact of the company */}
           <div className="contact-box">
             <img
               src={phoneContact}
@@ -26,6 +27,7 @@ const Contact = () => {
               <span>+389 22 556 338</span>
             </div>
           </div>
+          {/* Contact box of the social media accounts of the company without links to the respective accounts */}
           <div className="contact-box">
             <img
               src={socialMedia}
@@ -47,6 +49,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          {/* e-mail of the company */}
           <div className="contact-box">
             <img src={eMail} alt="E-mail" className="contact-icon" />
             <span>info@motivationalquotes.com</span>

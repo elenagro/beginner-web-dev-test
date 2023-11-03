@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/healthy-eating.png";
+import logo from "../../assets/healthy-life.png";
 import ThemeButton from "../../components/Button/ThemeButton";
 import Container from "../Container/Container";
 import { useTheme } from "../../store/theme-context";
