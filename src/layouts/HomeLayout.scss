@@ -1,11 +1,13 @@
+$darkThemeColor: #485460;
+
 // Light theme
 .theme.light {
   background-color: #fff;
-  color: #485460;
+  color: $darkThemeColor;
 }
 
 // Dark theme
 .theme.dark {
-  background-color: #485460;
+  background-color: $darkThemeColor;
   color: #fff;
 }

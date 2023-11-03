@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  // padding: 40px;
   gap: 60px;
 }
 
@@ -17,41 +16,38 @@
 .contact-form {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.contact-form {
-  .contact-box {
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-  }
-  .contact-icon {
-    width: 100px;
-    padding-bottom: 40px;
-  }
-  .phone-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .social-mediums {
-    display: flex;
-    flex-direction: column;
+.contact-form .contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
 
-    align-items: center;
-  }
-  .s-media {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    padding-bottom: 10px;
-  }
+.contact-form .contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.contact-form .contact-box .contact-icon {
+  width: 100px;
+  padding-bottom: 40px;
+}
+
+.contact-form .contact-box .s-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 .contact-box {
@@ -66,23 +62,15 @@
   }
 }
 
-// .contact-box {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
+/* Media query for screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+  /* Change to a column layout on a smaller screen */
+  .contact-form {
+    flex-direction: column;
+  }
 
-// .contact-icon {
-//   width: 100px;
-// }
-
-// .social-mediums {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .s-media {
-//   width: 30px;
-// }
+  .contact-form .contact-box {
+    width: 100%; /* Boxes with full width on a smaller screen */
+    max-width: none; /* Remove the maximum width */
+  }
+}
